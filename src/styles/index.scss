@@ -1,0 +1,115 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: 	#d9d9d9;
+ }
+
+h1.title {
+  text-align: center;
+  letter-spacing: 5px;
+}
+h1.todo-header {
+  
+  color: #b3b3b3;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 5em;
+  font-weight: 400;
+  background: #F1EFEF;
+}
+
+div#container {
+  width: 560px;
+  margin: 30px auto;
+  background: #f7f7f7;
+  }
+
+ul {
+  cursor: pointer;
+  list-style: none;
+  margin: 0;
+ 
+}
+
+li {
+  background: #fff;
+  width:480px;
+  line-height: 2em;
+  margin: 0;
+  color: #666;
+}
+
+li:nth-child(2n) {
+  background:#F1EFEF;
+}
+
+li.clicked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+input#addToDo {
+  font-size: 18px;
+  color: #2980b9;
+  background: #F1EFEF;
+  margin-left: 40px;
+  padding: 10px 10px 10px 0px;
+  border: 2px solid #999999;
+  border-radius: 2px;
+  width: 480px;
+ 
+}
+
+input#addToDo:focus {
+ 
+  outline: none;
+  transition: 0.1s;
+}
+
+
+span {
+
+  width: 0;
+  float: right;
+  text-align: center;
+  display: inline-block;
+  color:#817D7D;
+  opacity: 0;
+  /*transition: .2s linear;*/
+  transition: background-color .2s ease-out;
+  
+  
+}
+
+li:hover span {
+  opacity: 1.0;
+  width: 40px;
+}
+
+.footer{
+    
+   font-size: 12px;
+   display: flex;
+
+ }
+ .counter{
+   /*padding-top: 5px;*/
+   padding-left: 40px;
+   padding-right: 5px;
+ }
+ 
+ 
